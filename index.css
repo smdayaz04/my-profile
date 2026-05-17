@@ -1,180 +1,274 @@
-
 html {
     box-sizing: border-box;
-    font-size: 62.5%; 
+    font-size: 62.5%;
 }
+
 *, *:before, *:after {
     box-sizing: inherit;
 }
 
 html, body {
     height: 100%;
-}
-body {
-    background: #f6f6f6; 
     margin: 0;
-    font-family:'Times New Roman', Times, serif;
-    font-size: 1.5rem;
-    line-height: 1.4;
+    padding: 0;
 }
+
+/* GLOBAL BODY */
+
+body {
+    background:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("placeholder-images/bg-home-office-studio.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* TYPOGRAPHY */
+
 h1, h2, h3 {
     font-family: 'Caveat', cursive;
     font-weight: 400;
     margin: 0;
+    color: white;
 }
+
 h1 {
-    font-size: 6rem;
-    line-height: 0.9;
+    font-size: 7rem;
+    line-height: 1;
+    text-shadow: 2px 2px 15px rgba(0,0,0,0.5);
 }
+
 h2 {
     font-size: 3.5rem;
+    color: #f1f1f1;
 }
+
 h3 {
     font-size: 2.5rem;
 }
 
+p {
+    font-size: 1.7rem;
+    line-height: 1.8;
+    color: #f5f5f5;
+}
+
+/* LINKS */
 
 a {
-    color: #3c8453;
-}
-a:hover {
-    color: #bcaa96;
+    color: #90ee90;
     text-decoration: none;
 }
+
+a:hover {
+    color: #ffffff;
+}
+
 footer a {
     color: #bcaa96;
 }
+
 footer a:hover {
     color: #3c8453;
 }
-.btn{
-    background:#3c8453;
-    color:#f6f6f6;
-    text-decoration:none;
+
+/* BUTTON */
+
+.btn {
+    background: #3c8453;
+    color: #f6f6f6;
+    text-decoration: none;
     text-transform: uppercase;
     font-size: 1.2rem;
     display: inline-block;
-    padding: 7px;
+    padding: 10px 16px;
     letter-spacing: .1em;
     line-height: 1;
-    border-radius: 4px;
-}
-.content-wrapper{
-    margin: 0 auto;
-    padding: 30px;
-    max-width: 900px;;
+    border-radius: 6px;
+    transition: 0.3s;
 }
 
+.btn:hover {
+    background: #2d633f;
+}
 
-.home{
-    background : url(/my-profile/placeholder-images/bg-sunset-ocean.jpg) no-repeat;
+/* MAIN WRAPPER */
+
+.content-wrapper {
+    background: rgba(0,0,0,0.35);
+    padding: 50px;
+    border-radius: 25px;
+    width: 80%;
+    margin: 40px auto;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+}
+
+/* HOME PAGE */
+
+.home {
+    background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("placeholder-images/bg-gradient.jpg");
+
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     display: flex;
     flex-direction: column;
-}
-.home .content-wrapper{
-    flex: 1 0 auto;
-}
-.content-bg{
-    background: rgb(255 255 255 /0.9);
-    padding: 30px;
-}
-@media screen and (max-width:580px) {
-    .home .content-wrapper{
-        padding: 10px;
-    }
-    .content-bg{
-        padding: 20px;
-    }
+    min-height: 100vh;
 }
 
-.resume header::before{
-    background: url(/my-profile/placeholder-images/bg-sunset-ocean.jpg) center;
+.home .content-wrapper {
+    flex: 1 0 auto;
+}
+
+.content-bg {
+    background: rgba(0,0,0,0.45);
+    padding: 40px;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+}
+
+/* RESUME PAGE */
+
+.resume header::before {
+    background:
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url("placeholder-images/bg-home-office-city.jpg") center;
+
     background-size: cover;
     display: block;
-    content:"";
+    content: "";
     height: 375px;
-    
+    border-radius: 20px;
+    margin-bottom: 30px;
 }
-.resume-section{
-    margin-bottom: 50px;
+
+.resume-section {
+    background: rgba(255,255,255,0.05);
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
 }
-.resume-section h2{
-    border-bottom: 2px dashed lightgray;
+
+.resume-section h2 {
+    border-bottom: 2px dashed rgba(255,255,255,0.4);
+    padding-bottom: 10px;
 }
-.download-link{
+
+/* DOWNLOAD BUTTON */
+
+.download-link {
     position: fixed;
-    top: 5px;
-    left: 5px;
+    top: 10px;
+    left: 10px;
     font-size: 1.5rem;
+    z-index: 1000;
 }
-@media screen and (max-width:1200px){
-    .download-link{
+
+/* WORK SECTION */
+
+.work-item {
+    margin: 30px 0;
+}
+
+.work-details p {
+    margin: 0;
+}
+
+/* EDUCATION */
+
+.education-section {
+    margin: 30px 0;
+}
+
+.education-section p {
+    margin: 0;
+}
+
+/* FOOTER */
+
+footer {
+    background: rgba(0,0,0,0.8);
+    color: #d3d4d6;
+    padding: 15px 20px;
+}
+
+.socials {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.socials li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.socials img {
+    width: 32px;
+    transition: 0.3s;
+}
+
+.socials img:hover {
+    opacity: 0.6;
+    transform: scale(1.1);
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1200px) {
+
+    .download-link {
         position: absolute;
     }
 }
-@media screen and (max-width:580px) {
-    .resume header::before{
-        height: 200px;
-    }
-    h1{
-        font-size: 4.5rem;
-    }
-    h2{
-        font-size: 3rem;
-    }
-}
 
+@media screen and (max-width: 800px) {
 
-
-
-.work-item{
-    margin: 30px 0;
-}
-.work-details p{
-    margin:0;
-}
-
-
-
-
-.education-section{
-    margin: 30px 0;
-}
-.education-section p{
-    margin:0;
-}
-
-
-
-footer{
-    background: #222;
-    color: #d3d4d6;
-}
-.socials{
-    list-style-type: none;
-    padding:0;
-}
-.socials li{
-    display:inline-block;
-    margin-left: 10px;
-}
-.socials img{
-    width: 32px;
-}
-.socials img:hover{
-    opacity: 0.5;
-}
-@media screen and (min-width:800px){
-    footer{
-        display: flex;
-        justify-content: space-between;
-        padding: 0 20px;
-    }
-}
-@media screen and (max-width:800px){
-    footer{
+    footer {
         text-align: center;
         padding: 10px;
+    }
+
+    .content-wrapper {
+        width: 95%;
+        padding: 25px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+
+    .home .content-wrapper {
+        padding: 10px;
+    }
+
+    .content-bg {
+        padding: 20px;
+    }
+
+    .resume header::before {
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.5rem;
     }
 }
