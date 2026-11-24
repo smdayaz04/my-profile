@@ -1,85 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>S MD AYAZ | STUDENT</title>
-  <link rel="icon" type="image/x-icon" href="images/cv.png" />
-  <link rel="stylesheet" href="index.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:wght@700&display=swap"
-    rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Shaik Mohammed Ayaz, computer science student and developer. Explore projects in machine learning, analytics, and full-stack development.">
+  <meta name="theme-color" content="#101210">
+  <title>Shaik Mohammed Ayaz | Developer Portfolio</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="portfolio.js" defer></script>
 </head>
-
-<body class="home">
-  <!-- //  INTRO  // -->
-  <!-- Start content edits below this line. -->
-  <div class="content-wrapper">
-    <div class="content-bg">
-      <header>
-        <!-- Start content edits below this line. -->
-        <h1>S MD AYAZ </h1>
-        <h2>Student</h2>
-
-        <!-- End content edits here. -->
-      </header>
-
-      <!-- //  ABOUT ME  // -->
-      <main>
-        <h1>Hi, I'm Shaik Mohammed Ayaz</h1>
-
-       <p>
-       I'm a Computer Science Engineering student at VIT Amaravati and a passionate full-stack developer who enjoys building modern, user-friendly web applications. 
-       I work mainly with the MERN stack and love turning ideas into real projects with clean design and practical functionality.
-      </p>
-
-      <p>
-       I’m always curious to learn new technologies, improve my development skills, and work on projects that solve real-world problems. 
-       Apart from coding, I enjoy exploring tech trends, problem solving, and continuously challenging myself to grow as a developer.
-      </p>
-        <p>
-          To learn more about my work history, check out my
-          <a href="resume.html"> resume</a>. Thanks for stopping by!
-        </p>
-
-        <!-- End content edits here. -->
-      </main>
-    </div>
-
-  </div>
-
-  <!-- //  FOOTER INFO, SOCIAL MEDIA  // -->
-  <footer>
-    <!-- Start content edits below this line. -->
-    <p id = content2>
-      © 2025 by S MD AYAZ |
-      <a href="smdayaz04@gmail.com">smdayaz04@gmail.com</a>| 9491937949
-    </p>
-
-    <!-- Add or remove any networks. -->
-    <ul class="socials">
-
-      <li>
-
-        <a href="https://www.linkedin.com/in/shaik-mohammed-ayaz/"
-          target="_blank"><img src="placeholder-images/icon-logo-linkedin.png" width="32" height="32"></a>
-      </li>
-      <li>
-
-        <a href="https://www.facebook.com/share/1ApthnRZkf/?mibextid=qi2Omg" target="_blank"><img
-            src="placeholder-images/icon-logo-facebook.png" width="32" height="32"></a>
-      </li>
-
-      <li>
-
-        <a href="https://www.instagram.com/ayaaz_.s?igsh=MTdjN3Z3MmZzcDF4Ng==" target="_blank"> <img
-            src="placeholder-images/icon-logo-instagram.png" width="32" height="32"></a>
-      </li>
-    </ul>
-    <!-- End content edits here. -->
-  </footer>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="top">
+    <nav class="wrap nav" aria-label="Main navigation">
+      <a class="logo" href="#main">AYAZ<span>.</span></a>
+      <div class="nav-links"><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+      <a class="resume-link" href="Ayaz_Resume.pdf" download>Resume ↓</a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="wrap hero" aria-labelledby="name">
+      <div class="intro">
+        <p class="eyebrow"><span class="dot"></span> Computer Science · VIT-AP University</p>
+        <h1 id="name">Shaik Mohammed <em>Ayaz.</em></h1>
+        <p class="lede">I build full-stack applications and use machine learning to make complex data easier to understand.</p>
+        <div class="actions"><a class="button primary" href="#work">Explore my work ↓</a><a class="button secondary" href="https://github.com/smdayaz04">GitHub ↗</a></div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-outer"><i></i></div>
+        <div class="orbit orbit-inner"><i></i></div>
+        <div class="orbit orbit-mid"></div>
+        <div class="monogram">A<span>.</span></div>
+      </div>
+    </section>
+    <section class="wrap section" id="work" aria-labelledby="work-title">
+      <p class="eyebrow">Portfolio</p>
+      <h2 id="work-title">Selected work<span>.</span></h2>
+      <div class="projects">
+        <article class="card reveal">
+          <div class="project-art pulse" aria-hidden="true"><div class="chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+          <div class="card-body">
+            <p class="eyebrow">NLP · Data analytics</p>
+            <h3>Pulse</h3>
+            <p>A reputation intelligence dashboard built with Streamlit and Plotly. I compared sentiment classifiers on the 1.6 million tweets in Sentiment140 and designed a five-table Oracle data warehouse for analysis.</p>
+            <ul class="tags" aria-label="Technologies"><li>Python</li><li>Scikit-learn</li><li>Streamlit</li><li>Oracle SQL</li></ul>
+            <div class="project-links"><a href="https://sentiment-enterprise-analysis-3rlcaph2mdqev5fnjamdap.streamlit.app/" aria-label="Live demo of Pulse">Live demo ↗</a><a href="https://github.com/smdayaz04/sentiment-enterprise-analysis" aria-label="Source code for Pulse">Source code ↗</a></div>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="project-art geo" aria-hidden="true"><div class="contours"></div><div class="locator"></div></div>
+          <div class="card-body">
+            <p class="eyebrow">Explainable AI · Geospatial data</p>
+            <h3>GeoXAI-Bore</h3>
+            <p>An explainable machine learning app that predicts borewell failure risk in Andhra Pradesh using geospatial features such as elevation, slope, and lithology.</p>
+            <ul class="tags" aria-label="Methods"><li>Ensemble learning</li><li>Explainable AI</li><li>Geospatial analysis</li></ul>
+            <div class="project-links"><a href="https://geoxai-bore.onrender.com/" aria-label="Live demo of GeoXAI-Bore">Live demo ↗</a><a href="https://github.com/smdayaz04/GeoXAI-Bore" aria-label="Source code for GeoXAI-Bore">Source code ↗</a></div>
+          </div>
+        </article>
+        <article class="card earlier reveal">
+          <div><p class="eyebrow">Earlier work · Full stack</p><h3>Food Ordering Platform</h3></div>
+          <div><p>A MERN application with user authentication and real-time order tracking.</p><ul class="tags" aria-label="Technologies"><li>MongoDB</li><li>Express</li><li>React</li><li>Node.js</li></ul></div>
+        </article>
+      </div>
+    </section>
+    <section class="wrap section about" id="about" aria-labelledby="about-title">
+      <div class="reveal">
+        <p class="eyebrow">Background</p>
+        <h2 id="about-title">About me<span>.</span></h2>
+        <p>I’m a computer science undergraduate from Kadapa, Andhra Pradesh. I enjoy building the pieces that connect a project end to end, from a database and REST API to a dashboard people can use.</p>
+        <dl class="timeline">
+          <div><dt>Education</dt><dd>B.Tech in Computer Science and Engineering, VIT-AP University · Expected 2027</dd></div>
+          <div><dt>Achievement</dt><dd>First place in a national-level mathematics exam</dd></div>
+        </dl>
+      </div>
+      <div class="reveal skills">
+        <h3>Tools I work with</h3>
+        <dl class="timeline">
+          <div><dt>Languages</dt><dd>Java, Python, JavaScript, TypeScript, SQL</dd></div>
+          <div><dt>Application development</dt><dd>Spring Boot, React, Node.js, Express, REST APIs</dd></div>
+          <div><dt>Data and machine learning</dt><dd>Scikit-learn, Pandas, Plotly, Streamlit, MySQL, Oracle SQL</dd></div>
+          <div><dt>Development tools</dt><dd>Git, GitHub Actions, Docker, AWS</dd></div>
+        </dl>
+      </div>
+    </section>
+    <section class="wrap section contact reveal" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Get in touch<span>.</span></h2>
+      <p>Have a project or opportunity in mind? Send me an email.</p>
+      <div class="actions"><a class="button primary" href="mailto:smdayaz04@gmail.com">Email me ↗</a><a class="button secondary" href="https://www.linkedin.com/in/shaik-mohammed-ayaz/">LinkedIn ↗</a></div>
+    </section>
+  </main>
+  <footer class="wrap footer"><span>Shaik Mohammed Ayaz</span><a href="#main">Back to top ↑</a></footer>
 </body>
-
 </html>
